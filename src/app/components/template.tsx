@@ -78,7 +78,7 @@ export function TemplateAvatar(props: { avatar: string; model?: Model }) {
 export function TemplateConfig(props: {
   template: Template;
   updateTemplate: Updater<Template>;
-  extraListItems?: JSX.Element;
+  extraListItems?: React.JSX.Element;
   readonly?: boolean;
 }) {
   const [showPicker, setShowPicker] = useState(false);

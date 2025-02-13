@@ -382,7 +382,7 @@ function ClearContextDivider() {
 
 function ChatAction(props: {
   text: string;
-  icon: JSX.Element;
+  icon: React.JSX.Element;
   onClick: () => void;
   fullWidth?: boolean;
 }) {
@@ -443,7 +443,7 @@ function ChatAction(props: {
 }
 
 function useScrollToBottom(
-  scrollRef: RefObject<HTMLDivElement>,
+  scrollRef: RefObject<HTMLDivElement | null>,
   detach: boolean = false,
 ) {
   // for auto-scroll

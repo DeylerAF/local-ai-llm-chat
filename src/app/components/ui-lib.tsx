@@ -17,8 +17,8 @@ import React, { HTMLProps, ReactNode, useEffect, useState } from "react";
 import { IconButton } from "./button";
 
 export function Popover(props: {
-  children: JSX.Element;
-  content: JSX.Element;
+  children: React.JSX.Element;
+  content: React.JSX.Element;
   open?: boolean;
   onClose?: () => void;
 }) {
@@ -39,8 +39,8 @@ export function Popover(props: {
 }
 
 export function Tooltip(props: {
-  content: JSX.Element;
-  children: JSX.Element;
+  content: React.JSX.Element;
+  children: React.JSX.Element;
   direction?: "left" | "right" | "top" | "bottom";
 }) {
   const [visible, setVisible] = useState(false);
@@ -75,7 +75,10 @@ export function Tooltip(props: {
   );
 }
 
-export function Card(props: { children: JSX.Element[]; className?: string }) {
+export function Card(props: {
+  children: React.JSX.Element[];
+  className?: string;
+}) {
   return (
     <div className={styles.card + " " + props.className}>{props.children}</div>
   );
@@ -84,8 +87,8 @@ export function Card(props: { children: JSX.Element[]; className?: string }) {
 export function ListItem(props: {
   title: string;
   subTitle?: string;
-  children?: JSX.Element | JSX.Element[];
-  icon?: JSX.Element;
+  children?: React.JSX.Element | React.JSX.Element[];
+  icon?: React.JSX.Element;
   className?: string;
   onClick?: () => void;
 }) {
@@ -489,7 +492,7 @@ export function Selector<T>(props: {
     subTitle?: string;
     value: T;
     family?: string;
-    icon?: JSX.Element;
+    icon?: React.JSX.Element;
   }>;
   defaultSelectedValue?: T;
   onSelection?: (selection: T[]) => void;

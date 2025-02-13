@@ -6,7 +6,7 @@ export type ButtonType = "primary" | "danger" | null;
 
 export function IconButton(props: {
   onClick?: () => void;
-  icon?: JSX.Element;
+  icon?: React.JSX.Element;
   type?: ButtonType;
   text?: string;
   bordered?: boolean;

@@ -34,7 +34,7 @@ for (const modelDetail of modelDetailsList) {
 interface SearchInputProps {
   searchTerm: string;
   setSearchTerm: (term: string) => void;
-  inputRef: React.RefObject<HTMLInputElement>;
+  inputRef: React.RefObject<HTMLInputElement | null>;
 }
 
 const SearchInput: React.FC<SearchInputProps> = ({

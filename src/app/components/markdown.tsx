@@ -13,7 +13,7 @@ import LoadingIcon from "../icons/three-dots.svg";
 import React from "react";
 import { useDebouncedCallback } from "use-debounce";
 import { showImageModal } from "./ui-lib";
-import { PluggableList } from "react-markdown/lib";
+import { PluggableList } from "unified";
 
 export function Mermaid(props: { code: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -161,7 +161,7 @@ function _MarkDownContent(props: { content: string }) {
         a: (aProps) => {
           const href = aProps.href || "";
           const isInternal = /^\/#/i.test(href);
-          const target = isInternal ? "_self" : aProps.target ?? "_blank";
+          const target = isInternal ? "_self" : (aProps.target ?? "_blank");
           return <a {...aProps} target={target} />;
         },
       }}
@@ -178,7 +178,7 @@ export function Markdown(
     content: string;
     loading?: boolean;
     fontSize?: number;
-    parentRef?: RefObject<HTMLDivElement>;
+    parentRef?: RefObject<HTMLDivElement | null>;
     defaultShow?: boolean;
   } & React.DOMAttributes<HTMLDivElement>,
 ) {

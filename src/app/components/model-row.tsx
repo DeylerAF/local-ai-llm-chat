@@ -7,7 +7,7 @@ interface ModelRowProps {
   baseModel: string;
   variants: string[];
   isExpanded: boolean;
-  determineModelIcon: (model: string) => JSX.Element;
+  determineModelIcon: (model: string) => React.JSX.Element;
   extractModelDetails: (model: string) => {
     displayName: string;
     quantBadge: string | null;

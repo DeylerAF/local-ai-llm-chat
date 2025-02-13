@@ -20,10 +20,10 @@ type MakeUpdater<T> = {
   update: Updater<T>;
 };
 
-type SetStoreState<T> = (
-  partial: T | Partial<T> | ((state: T) => T | Partial<T>),
-  replace?: boolean | undefined,
-) => void;
+type SetStoreState<T> = {
+  (partial: T, replace: true): void;
+  (partial: Partial<T> | ((state: T) => T | Partial<T>), replace?: false): void;
+};
 
 export function createPersistStore<T extends object, M>(
   state: T,
