@@ -4,7 +4,7 @@ import "./styles/markdown.css";
 import "./styles/highlight.css";
 import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
-import Titlebar from "./components/windows/titlebar";
+import Titlebar from "../../src-tauri/devices/windows/titlebar";
 
 export const metadata: Metadata = {
   title: "WebLLM Chat",
