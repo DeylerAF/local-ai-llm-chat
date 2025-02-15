@@ -1,10 +1,10 @@
 import React from "react";
-import MetaIcon from "@/src/app/icons/meta.svg";
-import MicrosoftIcon from "@/src/app/icons/microsoft.svg";
-import MistralIcon from "@/src/app/icons/mistral.svg";
-import GoogleIcon from "@/src/app/icons/google.svg";
-import StablelmIcon from "@/src/app/icons/stablelm.svg";
-import DeepSeekIcon from "@/src/app/icons/deepseek.svg";
+import MetaIcon from "@/icons/meta.svg";
+import MicrosoftIcon from "@/icons/microsoft.svg";
+import MistralIcon from "@/icons/mistral.svg";
+import GoogleIcon from "@/icons/google.svg";
+import StablelmIcon from "@/icons/stablelm.svg";
+import DeepSeekIcon from "@/icons/deepseek.svg";
 import { ModelRecord } from "../client/api";
 import { ModelFamily } from "../constant";
 import { Shirt, WandSparkles } from "lucide-react";

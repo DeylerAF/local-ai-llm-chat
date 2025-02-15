@@ -3,7 +3,7 @@ import { Cpu, Search } from "lucide-react";
 import ModelRow from "./model-row";
 import { modelDetailsList } from "../utils/model";
 
-import style from "./model-select.module.scss";
+import style from "@styles/components/model-select.module.css";
 import { Modal } from "./ui-lib";
 
 import Locale from "../locales";

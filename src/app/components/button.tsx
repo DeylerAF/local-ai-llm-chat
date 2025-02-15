@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import styles from "./button.module.scss";
+import styles from "@styles/components/button.module.css";
 
 export type ButtonType = "primary" | "danger" | null;
 

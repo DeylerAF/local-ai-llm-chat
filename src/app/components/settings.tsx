@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import log from "loglevel";
 
-import styles from "./settings.module.scss";
+import styles from "@styles/components/settings.module.css";
 import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import CopyIcon from "../icons/copy.svg";

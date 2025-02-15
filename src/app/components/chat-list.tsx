@@ -1,7 +1,7 @@
 import DeleteIcon from "../icons/delete.svg";
 import BotIcon from "../icons/bot.svg";
 
-import styles from "./home.module.scss";
+import styles from "@styles/components/home.module.css";
 import {
   DragDropContext,
   Droppable,

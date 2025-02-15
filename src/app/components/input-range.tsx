@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "./input-range.module.scss";
+import styles from "@styles/components/input-range.module.css";
 
 interface InputRangeProps {
   onChange: React.ChangeEventHandler<HTMLInputElement>;

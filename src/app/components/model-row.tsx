@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-import style from "./model-row.module.scss";
+import style from "@styles/components/model-row.module.css";
 
 interface ModelRowProps {
   baseModel: string;

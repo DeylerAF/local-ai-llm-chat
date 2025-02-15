@@ -1,6 +1,6 @@
 import { useEffect, useRef, useMemo } from "react";
 
-import styles from "./home.module.scss";
+import styles from "@styles/components/home.module.css";
 
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/gear.svg";

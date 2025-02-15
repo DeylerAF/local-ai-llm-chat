@@ -1,0 +1,121 @@
+.template-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.template-page .template-page-body {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.template-page .template-page-body .template-filter {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  animation: slide-in ease 0.3s;
+  height: 40px;
+  display: flex;
+}
+
+.template-page .template-page-body .template-filter .search-bar {
+  flex-grow: 1;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.template-page .template-page-body .template-filter .template-filter-lang {
+  height: 100%;
+  margin-left: 10px;
+}
+
+.template-page .template-page-body .template-filter .template-create {
+  height: 100%;
+  margin-left: 10px;
+  box-sizing: border-box;
+  min-width: 80px;
+}
+
+@media screen and (max-width: 700px) {
+  .template-page .template-page-body .template-filter {
+    margin-left: -10px;
+  }
+
+  .template-page .template-page-body .template-filter .search-bar {
+    display: none;
+  }
+}
+
+.template-page .template-page-body .template-item-container {
+  min-width: 400px;
+}
+
+.template-page .template-page-body .template-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: var(--border-in-light);
+  animation: slide-in ease 0.3s;
+}
+
+.template-page .template-page-body .template-item:not(:last-child) {
+  border-bottom: 0;
+}
+
+.template-page .template-page-body .template-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.template-page .template-page-body .template-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.template-page .template-page-body .template-item .template-header {
+  display: flex;
+  align-items: center;
+}
+
+.template-page .template-page-body .template-item .template-header .template-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.template-page .template-page-body .template-item .template-header .template-title .template-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.template-page .template-page-body .template-item .template-header .template-title .template-info {
+  font-size: 12px;
+}
+
+.template-page .template-page-body .template-item .template-actions {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  .template-page .template-page-body .template-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: var(--card-shadow);
+  }
+
+  .template-page .template-page-body .template-item:not(:last-child) {
+    border-bottom: var(--border-in-light);
+  }
+
+  .template-page .template-page-body .template-item .template-actions {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+}

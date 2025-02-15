@@ -1,7 +1,7 @@
 import { IconButton } from "./button";
 import { ErrorBoundary } from "./error";
 
-import styles from "./template.module.scss";
+import styles from "@styles/components/template.module.css";
 
 import ConfirmIcon from "../icons/confirm.svg";
 import DownloadIcon from "../icons/download.svg";
@@ -40,7 +40,7 @@ import { Avatar, AvatarPicker } from "./emoji";
 import Locale from "../locales";
 import { useNavigate } from "react-router-dom";
 
-import chatStyle from "./chat.module.scss";
+import chatStyle from "@styles/components/chat.module.css";
 import { useState } from "react";
 import {
   copyToClipboard,

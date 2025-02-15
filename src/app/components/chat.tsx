@@ -61,7 +61,7 @@ import { Prompt, usePromptStore } from "../store/prompt";
 import Locale from "../locales";
 
 import { IconButton } from "./button";
-import styles from "./chat.module.scss";
+import styles from "@styles/components/chat.module.css";
 
 import {
   List,

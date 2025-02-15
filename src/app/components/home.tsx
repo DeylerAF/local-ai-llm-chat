@@ -2,7 +2,7 @@
 
 require("../polyfill");
 
-import styles from "./home.module.scss";
+import styles from "@styles/components/home.module.css";
 
 import log from "loglevel";
 import dynamic from "next/dynamic";
