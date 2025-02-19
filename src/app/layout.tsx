@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import "@/styles/markdown.css";
 import "@/styles/highlight.css";
 import { getClientConfig } from "./config/client";
-import { type Metadata } from "next";
+import type { Metadata } from "next";
 import Titlebar from "../../src-tauri/devices/windows/titlebar";
 
 export const metadata: Metadata = {
